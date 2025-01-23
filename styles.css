@@ -1,0 +1,66 @@
+
+/* ティファニーブルーを基調としたスタイル */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e6f2f0; /* ティファニーブルーの薄いトーン */
+}
+
+.stopwatch-container {
+  text-align: center;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #81d8d0; /* ティファニーブルーのアクセント */
+}
+
+h1 {
+  font-size: 2rem;
+  color: #5bc8b7; /* ティファニーブルー */
+  margin-bottom: 20px;
+}
+
+#display {
+  font-size: 3.5rem;
+  margin: 20px 0;
+  color: #333333;
+  letter-spacing: 0.1em;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #81d8d0; /* ティファニーブルー */
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #5bc8b7; /* 少し濃いティファニーブルー */
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #cce8e4; /* 薄いティファニーブルー */
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px #81d8d0;
+}
